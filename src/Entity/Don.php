@@ -26,10 +26,6 @@ class Don
      */
     private $Description;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Auteur;
 
     public function getId(): ?int
     {
@@ -56,18 +52,6 @@ class Don
     public function setDescription(?string $Description): self
     {
         $this->Description = $Description;
-
-        return $this;
-    }
-
-    public function getAuteur(): ?string
-    {
-        return $this->Auteur;
-    }
-
-    public function setAuteur(string $Auteur): self
-    {
-        $this->Auteur = $Auteur;
 
         return $this;
     }
