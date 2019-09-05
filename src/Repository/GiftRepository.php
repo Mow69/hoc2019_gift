@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Don;
+use App\Entity\Gift;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
- * @method Don|null find($id, $lockMode = null, $lockVersion = null)
- * @method Don|null findOneBy(array $criteria, array $orderBy = null)
- * @method Don[]    findAll()
- * @method Don[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Gift|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Gift|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Gift[]    findAll()
+ * @method Gift[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class DonRepository extends ServiceEntityRepository
+class GiftRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Don::class);
+        parent::__construct($registry, Gift::class);
     }
 
     // /**
-    //  * @return Don[] Returns an array of Don objects
+    //  * @return Gift[] Returns an array of Gift objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class DonRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Don
+    public function findOneBySomeField($value): ?Gift
     {
         return $this->createQueryBuilder('d')
             ->andWhere('d.exampleField = :val')
